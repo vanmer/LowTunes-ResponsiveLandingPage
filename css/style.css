@@ -1,27 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-body {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #252529;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #FFC2D4;
   margin: 0;
   color: #fff;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:
+}
+
+/* Section */
+section {
+  padding: 2rem 0;
+  text-shadow: 3px 2px 6px #6666;
+}
+
+.fa-music {
+  font-size: 2.5rem;
+}
+
+.fa-music span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+.section h3 {
+  font-size: 2rem;
+}
+
+.light {
+  font-size: 1.2rem;
+}
+
+.bg-light {
+  background-color: #95DB95;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem;
+  display: inline-block;
+  text-shadow: none;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #169BF3;
+}
+
+.btn-primary:hover {
+  background-color: #51B4F6;
+}
+
+
+/* Showcase */
+#showcase {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/showcase.jpg') no-repeat center/cover;
+  position: relative;
+  overflow-y: hidden;
+  color: #F2F4F3;
+  text-shadow: 3px 2px 6px black;
+}
+
+#showcase .container {
+  margin-top: 52vh;
+}
+
+#showcase h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px black;
+}
+
+#showcase h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* Navigation */
 nav {
   position: fixed;
   height: 40px;
   width: 100%;
   background-color: #333;
+  opacity: 0.;
   color: #eee;
 }
+
 nav ul {
   padding: 0;
   margin: 0;
 }
+
 nav li {
   display: inline;
   float: left;
+  line-height: 1.2;
+  padding-left: 10px;
 }
 nav a {
   display: inline-block;
@@ -40,6 +138,26 @@ nav a#openup {
 }
 
 @media screen and (max-width: 580px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  #showcase {
+    height: 50vh;
+  }
+
+  #showcase .container {
+    margin-top: 16vh;
+  }
+
+  #showcase h1 {
+    font-size: 2.3rem;
+  }
+
+  #showcase h2 {
+    font-size: 1.1rem;
+  }
+
   nav {
     height: auto;
     border-bottom: 0;
