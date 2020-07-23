@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 html, body {
   font-family: 'Poppins', sans-serif;
-  background-color: #FFC2D4;
+  /* background-color: #FFC2D4; */
+  background-color: #333;
   margin: 0;
   color: #fff;
   line-height: 1.5;
@@ -36,6 +37,10 @@ section {
 
 .light {
   font-size: 1.2rem;
+}
+
+.bg-pink {
+  background-color: #FFC2D4;
 }
 
 .bg-green {
@@ -96,6 +101,42 @@ section {
   font-size: 1.3rem;
 }
 
+/* Footer */
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 0.8rem;
+  margin-top: -1.8rem;
+}
+
+.footer-cols ul li:first-child {
+  font-size: 1rem;
+  padding-bottom: 1.1rem;
+  font-weight: 500;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-cols ul {
+  list-style: none;
+}
+
+.footer a {
+  color: white;
+}
+
+.bg-footer {
+  background-color: #333;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  padding: 0.8rem;
+}
+
 /* Utility Classes */
 .container {
   max-width: 1180px;
@@ -151,15 +192,16 @@ nav a#openup {
   }
 
   #showcase .container {
-    margin-top: 16vh;
+    margin-top: 19vh;
   }
 
   #showcase h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   #showcase h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-top: -0.5rem;
   }
 
   nav {
@@ -217,16 +259,4 @@ nav a#openup {
 
 .cf {
   zoom: 1;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-}
-footer a {
-  color: white;
-}
-
-.bg-footer {
-  background-color: #333;
 }
