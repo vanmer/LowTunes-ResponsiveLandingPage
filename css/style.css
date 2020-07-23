@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 html, body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #FFC2D4;
   margin: 0;
   color: #fff;
@@ -13,7 +13,6 @@ img {
 
 a {
   text-decoration: none;
-  color:
 }
 
 /* Section */
@@ -28,7 +27,7 @@ section {
 
 .fa-music span {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .section h3 {
@@ -39,8 +38,12 @@ section {
   font-size: 1.2rem;
 }
 
-.bg-light {
+.bg-green {
   background-color: #95DB95;
+}
+
+.bg-blue {
+  background-color: #1FB7EA;
 }
 
 /* Buttons */
@@ -57,6 +60,7 @@ section {
 
 .btn-primary:hover {
   background-color: #51B4F6;
+  cursor: pointer;
 }
 
 
@@ -79,7 +83,7 @@ section {
 
 #showcase h1 {
   font-size: 3.8rem;
-  font-weight: 700;
+  font-weight: 500;
   text-shadow: 2px 2px 6px black;
 }
 
@@ -89,7 +93,7 @@ section {
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* Utility Classes */
@@ -97,7 +101,7 @@ section {
   max-width: 1180px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 1.2rem 3rem;
 }
 
 /* Navigation */
@@ -213,4 +217,16 @@ nav a#openup {
 
 .cf {
   zoom: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+.bg-footer {
+  background-color: #333;
 }
