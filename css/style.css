@@ -50,6 +50,18 @@ section {
   background-color: #1FB7EA;
 }
 
+.ipad {
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
+  height: auto;
+  width: 93%;
+}
+
+.card-img {
+  padding-bottom: -1rem;
+}
+
 /* Buttons */
 .btn {
   padding: 1rem;
@@ -191,12 +203,9 @@ nav a#openup {
     height: 50vh;
   }
 
-  #showcase .container {
-    margin-top: 20vh;
-  }
-
   #showcase h1 {
-    font-size: 1.9rem;
+    margin-top: 15vh;
+    font-size: 2rem;
   }
 
   #showcase h2 {
@@ -231,6 +240,10 @@ nav a#openup {
 
   img {
     margin: 0.8rem 0;
+  }
+
+  .ipad {
+    padding: 1rem 0;
   }
 
   .footer-bottom {
