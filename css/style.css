@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 html, body {
   font-family: 'Poppins', sans-serif;
-  /* background-color: #FFC2D4; */
   background-color: #333;
   margin: 0;
   color: #fff;
@@ -83,7 +82,7 @@ section {
 }
 
 #showcase .container {
-  margin-top: 52vh;
+  margin-top: 48vh;
 }
 
 #showcase h1 {
@@ -182,6 +181,7 @@ nav a#openup {
   display: none;
 }
 
+/* Media Queries */
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
@@ -286,11 +286,9 @@ nav a#openup {
   content: "";
   display: table;
 }
-
 .cf:after {
   clear: both;
 }
-
 .cf {
   zoom: 1;
 }
@@ -298,5 +296,11 @@ nav a#openup {
 @media screen and (max-width: 780px) {
   footer .footer-cols {
     display: none;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  #showcase {
+    height: 100vh;
   }
 }
