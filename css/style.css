@@ -303,4 +303,14 @@ nav a#openup {
   #showcase {
     height: 100vh;
   }
+  #showcase h1 {
+    font-size: 2rem;
+  }
+  #showcase h2 {
+    font-size: 1.4rem;
+    margin-top: -0.7rem;
+  }
+  #showcase .container {
+    margin-top: 50vh;
+  }
 }
