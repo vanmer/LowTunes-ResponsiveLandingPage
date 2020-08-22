@@ -1,13 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
 /*----------------------------------------------------------------------------*/
 /*----------------------------- Global Settings ------------------------------*/
 /*----------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #333;
+  --third-color: #444;
+  --fourth-color: #000;
+  --fifth-color: #FFC2D4;
+  --sixth-color: #95DB95;
+  --seventh-color: #1FB7EA;
+  --eightth-color: #169BF3;
+  --ninth-color: #51B4F6;
+  --tenth-color: #6666;
+}
+
 html, body {
   font-family: 'Poppins', sans-serif;
-  background-color: #333;
+  background-color: var(--secondary-color);
   margin: 0;
-  color: #fff;
+  color: var(--primary-color);
   line-height: 1.5;
 }
 
@@ -24,7 +37,7 @@ a {
 /*----------------------------------------------------------------------------*/
 section {
   padding: 2rem 0;
-  text-shadow: 3px 2px 6px #6666;
+  text-shadow: 3px 2px 6px var(--tenth-color);
 }
 
 .fa-music {
@@ -32,7 +45,7 @@ section {
 }
 
 .fa-music span {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
@@ -45,15 +58,15 @@ section {
 }
 
 .bg-pink {
-  background-color: #FFC2D4;
+  background-color: var(--fifth-color);
 }
 
 .bg-green {
-  background-color: #95DB95;
+  background-color: var(--sixth-color);
 }
 
 .bg-blue {
-  background-color: #1FB7EA;
+  background-color: var(--seventh-color);
 }
 
 .ipad {
@@ -61,11 +74,16 @@ section {
   margin: 0 auto;
   padding: 3rem 0;
   height: auto;
-  width: 93%;
+  width: 68%;
+}
+
+.tablet-mobile {
+  width: 72%;
 }
 
 .card-img {
   padding-bottom: -1rem;
+  width: 75%;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -75,15 +93,15 @@ section {
   padding: 1rem;
   display: inline-block;
   text-shadow: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 .btn-primary {
-  background-color: #169BF3;
+  background-color: var(--eightth-color);
 }
 
 .btn-primary:hover {
-  background-color: #51B4F6;
+  background-color: var(--ninth-color);
   cursor: pointer;
 }
 
@@ -98,23 +116,24 @@ section {
   background: url('../img/showcase.jpg') no-repeat center/cover;
   position: relative;
   overflow-y: hidden;
-  color: #F2F4F3;
-  text-shadow: 3px 2px 6px black;
+  color: var(--primary-color);
+  text-shadow: 3px 2px 6px var(--fourth-color);
 }
 
 #showcase .container {
-  margin-top: 48vh;
+  margin-top: 30%;
 }
 
 #showcase h1 {
   font-size: 3.8rem;
   font-weight: 500;
-  text-shadow: 2px 2px 6px black;
+  text-shadow: 2px 2px 6px var(--fourth-color);
 }
 
 #showcase h2 {
   font-size: 2rem;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .lead {
@@ -138,7 +157,7 @@ footer .footer-cols {
   font-size: 1rem;
   padding-bottom: 1.1rem;
   font-weight: 500;
-  border-bottom: #444 solid 1px;
+  border-bottom: var(--third-color) solid 1px;
   margin-bottom: 1rem;
 }
 
@@ -147,11 +166,11 @@ footer .footer-cols {
 }
 
 .footer a {
-  color: white;
+  color: var(--primary-color);
 }
 
 .bg-footer {
-  background-color: #333;
+  background-color: var(--secondary-color);
 }
 
 .footer-bottom {
@@ -176,9 +195,9 @@ nav {
   position: fixed;
   height: 40px;
   width: 100%;
-  background-color: #333;
+  background-color: var(--secondary-color);
   opacity: 0.;
-  color: #eee;
+  color: var(--primary-color);
 }
 
 nav ul {
@@ -188,24 +207,34 @@ nav ul {
 
 nav li {
   display: inline;
-  float: left;
   line-height: 1.2;
-  padding-left: 10px;
+  padding-left: 0.625rem;
 }
 nav a {
   display: inline-block;
-  width: 100px;
+  width: 6.25rem;
   text-align: center;
   text-decoration: none;
-  padding: 10px 0;
-  color: #eee;
+  padding: 0.625rem 0;
+  color: var(--primary-color);
   text-decoration: none;
 }
 nav li:hover {
-  background-color: #444;
+  background-color: var(--third-color);
 }
 nav a#openup {
   display: none;
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -215,8 +244,8 @@ nav a#openup {
   .hide-on-small {
     display: none;
   }
-  #showcase {
-    height: 50vh;
+  #showcase .container {
+    margin-top: 27rem;
   }
   #showcase h1 {
     margin-top: 15vh;
@@ -251,6 +280,13 @@ nav a#openup {
   }
   .ipad {
     padding: 1rem 0;
+    width: 90%;
+  }
+  .tablet-mobile {
+    width: 100%;
+  }
+  .card-img {
+    width: 100%;
   }
   .footer-bottom {
     font-size: 0.8rem;
@@ -271,12 +307,12 @@ nav a#openup {
   nav a {
     text-align: left;
     width: 100%;
-    text-indent: 25px;
-    background: #333;
-    border-bottom: 1px solid #555;
+    text-indent: 1.6rem;
+    background: var(--secondary-color);
+    border-bottom: 1px solid var(--third-color);
   }
   nav a:hover {
-    background: #444;
+    background: var(--third-color);
   }
   nav a#openup:after {
     content: "|||";
@@ -285,37 +321,24 @@ nav a#openup {
     /* IE 9 */
     -webkit-transform: rotate(-90deg);
     /* Safari and Chrome */
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     display: inline-block;
     position: absolute;
-    right: 5px;
-    top: 20px;
+    right: 0.3125rem;
+    top: 1.6rem;
   }
   nav a#openup {
     display: block;
-    background-color: #333;
+    background-color: var(--secondary-color);
     width: 100%;
     position: relative;
   }
-}
-
-.cf:before, .cf:after {
-  content: "";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-.cf {
-  zoom: 1;
-}
-
-@media screen and (max-width: 780px) {
   footer .footer-cols {
     display: none;
   }
 }
+
 
 @media screen and (max-height: 780px) {
   #showcase {
@@ -328,7 +351,13 @@ nav a#openup {
     font-size: 1.4rem;
     margin-top: -0.7rem;
   }
-  #showcase .container {
-    margin-top: 50vh;
+  #showcase p {
+    font-size: 1.1rem;
   }
+  #showcase .container {
+    margin-top: 70%;
+  }
+  
 }
+
+
